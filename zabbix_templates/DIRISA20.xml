@@ -1,0 +1,3236 @@
+<zabbix_export>
+    <version>4.0</version>
+    <date>2020-05-21T23:09:53Z</date>
+    <groups>
+        <group>
+            <name>PyZaMod</name>
+        </group>
+    </groups>
+    <templates><template><template>DIRISA20</template>
+            <name>DIRISA20</name>
+            <description />
+            <groups>
+                <group>
+                    <name>PyZaMod</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Status</name>
+                </application>
+                <application>
+                    <name>Voltage</name>
+                </application>
+                <application>
+                    <name>Current</name>
+                </application>
+                <application>
+                    <name>Power</name>
+                </application>
+                <application>
+                    <name>PowerFactor</name>
+                </application>
+                <application>
+                    <name>Energies</name>
+                </application>
+                <application>
+                    <name>THD</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>HOURMETER</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>HOURMETER</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>h</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Hour Meter</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Status</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>U12</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>U12</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>V</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Phase to Phase Voltage: U12</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>U23</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>U23</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>V</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Phase to Phase Voltage: U23</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>U31</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>U31</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>V</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Phase to Phase Voltage: U31</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>V1</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>V1</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>V</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Simple voltage : V1</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>V2</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>V2</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>V</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Simple voltage : V2</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>V3</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>V3</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>V</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Simple voltage : V3</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>F</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>F</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>Hz</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Frequency : F</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>I1</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>I1</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>A</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Current : I1</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Current</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>I2</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>I2</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>A</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Current : I2</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Current</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>I3</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>I3</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>A</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Current : I3</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Current</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>In</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>In</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>A</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Neutral Current : In</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Current</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>P</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>P</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>W</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Active Power +/- : P</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Q</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Q</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>var</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Reactive Power +/- : Q</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>S</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>S</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>VA</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Apparent Power : S</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>PFsys</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>PFsys</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>0</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Power Factor : -: leading et + : lagging : PF</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PowerFactor</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>P1</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>P1</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>W 10</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Active Power phase 1 +/- : P1</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>P2</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>P2</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>W 10</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Active Power phase 2 +/- : P2</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>P3</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>P3</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>W 10</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Active Power phase 3 +/- : P3</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Q1</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Q1</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>var 10</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Reactive Power phase 1 +/- : Q1</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Q2</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Q2</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>var 10</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Reactive Power phase 2 +/- : Q2</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Q3</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Q3</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>var 10</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Reactive Power phase 3 +/- : Q3</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>S1</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>S1</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>VA 10</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Apparent Power phase 1 : S1</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>S2</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>S2</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>VA 10</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Apparent Power phase 2 : S2</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>S3</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>S3</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>VA 10</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Apparent Power phase 3 : S3</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>PF1sys</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>PF1sys</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>0</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Power Factor phase 1 -: leading and + : lagging : PF1 </description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PowerFactor</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>PF2sys</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>PF2sys</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>0</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Power Factor phase 2 -: leading and + : lagging : PF2 </description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PowerFactor</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>PF3sys</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>PF3sys</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>0</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Power Factor phase 3 -: leading and + : lagging : PF3 </description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PowerFactor</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Isys</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Isys</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>A</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>System value I Sys : ( I1+I2+I3) / 3 </description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Current</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Usys</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Usys</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>V</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>System value U Sys : (U12 + U23 + U31 ) / 3 </description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Vsys</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Vsys</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>V</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>System value V Sys : (V1 + V2 + V3 ) / 3 </description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>PF</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>PF</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>0</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Total power factor (IEC) </description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PowerFactor</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>PF1</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>PF1</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>0</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Power factor : PF1 (IEC) </description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PowerFactor</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>PF2</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>PF2</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>0</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Power factor : PF2 (IEC) </description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PowerFactor</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>PF3</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>PF3</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>0</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Power factor : PF3 (IEC) </description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PowerFactor</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Vnba</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Vnba</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Vnba</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Current</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Unba</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Unba</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Unba</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Inba</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Inba</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Inba</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltage</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>HOURMETERPARTIAL</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>HOURMETERPARTIAL</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>h</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Hour meter partial energies</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Status</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Eapos</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Eapos</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>kWh</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Total Positive active Energy : Ea+</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Energies</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Erpos</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Erpos</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>kvarh</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Total Positive reactive Energy : Er+</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Energies</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Eap</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Eap</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>kVAh</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Total Apparent Energy : Eap</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Energies</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Eaneg</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Eaneg</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>kWh</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Total Negative active Energy : Ea-</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Energies</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>Erneg</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>Erneg</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>kvarh</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>Total Negative reactive Energy : Er-</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Energies</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>THDU12</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>THDU12</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>thd U12</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>THD</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>THDU23</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>THDU23</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>thd U23</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>THD</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>THDU31</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>THDU31</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>thd U31</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>THD</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>THDV1</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>THDV1</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>thd V1</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>THD</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>THDV2</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>THDV2</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>thd V2</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>THD</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>THDV3</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>THDV3</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>thd V3</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>THD</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>THDI1</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>THDI1</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>thd I1</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>THD</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>THDI2</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>THDI2</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>thd I2</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>THD</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>THDI3</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>THDI3</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>thd I3</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>THD</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+                <item>
+                    <name>THDIn</name>
+                    <type>2</type>
+                    <snmp_community />
+                    <snmp_oid />
+                    <key>THDIn</key>
+                    <delay>0</delay>
+                    <history>365d</history>
+                    <trends>3650d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts />
+                    <units>%</units>
+                    <snmpv3_contextname />
+                    <snmpv3_securityname />
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase />
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase />
+                    <params />
+                    <ipmi_sensor />
+                    <authtype>0</authtype>
+                    <username />
+                    <password />
+                    <publickey />
+                    <privatekey />
+                    <port />
+                    <description>thd In</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>THD</name>
+                        </application>
+                    </applications>
+                    <valuemap />
+                    <logtimefmt />
+                    <preprocessing />
+                    <jmx_endpoint />
+                    <timeout>3s</timeout>
+                    <url />
+                    <query_fields />
+                    <posts />
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy />
+                    <headers />
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file />
+                    <ssl_key_file />
+                    <ssl_key_password />
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item />
+                </item>
+            </items>
+            <discovery_rules />
+            <httptests />
+            <macros />
+            <templates><template>
+                    <name>PyZaModPollingInfo</name>
+                </template></templates>
+            <screens />
+        </template></templates>
+</zabbix_export>

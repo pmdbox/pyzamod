@@ -1,0 +1,46 @@
+---
+- name: Armbian Base setup for Modbus-to-Zabbix station
+  hosts: servers
+  gather_facts: no
+  become: yes
+  become_method: sudo
+ 
+  tasks:
+    - name: "sudo to root"
+      command: /usr/bin/whoami    
+
+    - name: Update apt
+      apt: update_cache=yes
+
+    - name: Install aptitude using apt
+      apt: name=aptitude state=latest update_cache=yes force_apt_get=yes
+
+    - name: Install required system packages
+      apt: name={{ item }} state=latest update_cache=yes
+      loop: ['apt-transport-https', 'ca-certificates', 'curl', 'software-properties-common', 'virtualenv', 'snmpd', 'snmp']
+
+    - name: Install MC using apt
+      apt: name=mc state=latest update_cache=yes 
+
+    - name: Install Base Python3 packages
+      apt: name={{ item }} state=latest update_cache=yes
+      loop: ['python3', 'python3-pip', 'python3-setuptools']
+
+    - file:
+        src: /usr/bin/python3
+        dest: /usr/bin/python
+        owner: root
+        group: root
+        state: link
+
+    - name: Install PyZabbix Module for Python
+      pip:
+        name: py-zabbix
+    
+    - name: Install PyModbus Module for Python
+      pip:
+        name: pymodbus
+
+    - name: Install Supervisor Program
+      pip:
+        name: supervisor
