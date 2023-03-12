@@ -1,6 +1,6 @@
 class ModbusVariable:
 
-	def __init__(self, Name='', Address=0, Type='int', Min=-100.0, Max=100.0, realMin=-100.0, realMax=100.0, WordIndian='Big',ByteIndian='Big',AdditionalValue=0,ReadingSpeed='fast'):
+	def __init__(self, Name='', Address=0, Type='int', Min=-100.0, Max=100.0, realMin=-100.0, realMax=100.0, WordIndian='Big',ByteIndian='Big',AdditionalValue=0,ReadingSpeed='fast',UseCommand=3):
 		self.Name = Name
 		self.Address = Address
 		self.Type = Type
@@ -13,6 +13,7 @@ class ModbusVariable:
 		self.ByteIndian = ByteIndian
 		self.AdditionalValue = AdditionalValue
 		self.ReadingSpeed = ReadingSpeed
+		self.UseCommand = UseCommand
 		
 	def setRawValue(self,RawValue):
 		self.Value = self.AdditionalValue + self.realMin+(RawValue-self.Min)*self.Koef
@@ -37,6 +38,9 @@ class ModbusVariable:
 
 	def getReadingSpeed(self):
 		return self.ReadingSpeed
+
+	def getCommand(self):
+		return self.UseCommand
 
 
 
@@ -88,6 +92,10 @@ class DeviceTemplate:
 		variable = self.Variables[variableIndex]
 		return variable.getWordIndian()
 
+	def getCommand(self,variableIndex):
+		variable = self.Variables[variableIndex]
+		return variable.getCommand()
+
 	def addVariablesList(self,deviceType):
 		for deviceRegister in deviceType:
 			Name = deviceRegister[0]
@@ -101,4 +109,5 @@ class DeviceTemplate:
 			ByteIndian = deviceRegister[11]
 			AdditionalValue = deviceRegister[12]
 			ReadingSpeed = deviceRegister[13]
-			self.addVariable(ModbusVariable(Name,Address,Type,Min,Max,MinReal,MaxReal,WordIndian,ByteIndian,AdditionalValue,ReadingSpeed))
+			UseCommand = deviceRegister[14]
+			self.addVariable(ModbusVariable(Name,Address,Type,Min,Max,MinReal,MaxReal,WordIndian,ByteIndian,AdditionalValue,ReadingSpeed,UseCommand))

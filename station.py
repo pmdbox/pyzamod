@@ -53,7 +53,7 @@ class Station:
 		onePollPart = 100/variablesCount
 		for i in range(variablesCount):
 			try:
-				varibaleValue = self.__readVariableFromModbus(device.getModbusAddress(),device.getVariableModbusAddress(i),device.getVariableType(i),device.getByteIndian(i),device.getWordIndian(i))				
+				varibaleValue = self.__readVariableFromModbus(device.getModbusAddress(),device.getVariableModbusAddress(i),device.getVariableType(i),device.getByteIndian(i),device.getWordIndian(i),device.getCommand(i))
 				device.setVariableValue(i,varibaleValue)
 				lastPoll = lastPoll + onePollPart
 				self.__sendToZabbix(device.getZabbixName(),device.getVariableName(i),device.getVariableValue(i))
@@ -62,7 +62,7 @@ class Station:
 				print ('Error reading register:',device.getModbusAddress(),device.getVariableName(i))
 		self.__sendToZabbix(device.getZabbixName(),'LASTPOLL', lastPoll)	
 
-	def __readVariableFromModbus(self,modbusAddress,modbusVariableAddress,type,byteIndian,wordIndian):
+	def __readVariableFromModbus(self,modbusAddress,modbusVariableAddress,type,byteIndian,wordIndian,useCommand):
 		if(byteIndian=='Big'):
 			byteorder = Endian.Big
 		else:
@@ -73,7 +73,11 @@ class Station:
 		else:
 			wordorder = Endian.Little
 
-		rr = self.modbusClient.read_holding_registers(modbusVariableAddress, self.modbusTypesLength[type], unit=modbusAddress)
+		if (useCommand == 3):
+			rr = self.modbusClient.read_holding_registers(modbusVariableAddress, self.modbusTypesLength[type], unit=modbusAddress)
+		elif (useCommand == 4):
+			rr = self.modbusClient.read_input_registers(modbusVariableAddress, self.modbusTypesLength[type], unit=modbusAddress)
+
 		if (not rr.isError()):
 			responseValue = self.__convertModbusResponseValue(type,rr,byteorder,wordorder)
 			#print (responseValue)
