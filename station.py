@@ -8,6 +8,10 @@ from collections import OrderedDict
 from pyzabbix import ZabbixMetric, ZabbixSender
 from modbustemplates import *
 from devicemodels import *
+import psycopg2
+import time
+from time import localtime, strftime, gmtime
+from datetime import datetime
 
 class Station:
 
@@ -23,9 +27,15 @@ class Station:
 		    'word': 1,
 		    'dword': 2
 		}
+		self.ZabbixHost = None
+		self.ConnectString = None
+		self.conn = None
 
 	def addZabbixReceiver(self,ZabbixHostAddress,ZabbixHostPort=10051):
 		self.ZabbixHost = ZabbixSender(ZabbixHostAddress,ZabbixHostPort)
+
+	def addDb(self,ip,port,database,login,password):
+		self.ConnectString = "postgres://"+login+":"+password+"@"+ip+":"+port+"/"+database
 
 	def addDevice(self,deviceType,deviceName,deviceAddress):
 		Device = DeviceTemplate(deviceName,deviceAddress)
@@ -40,6 +50,34 @@ class Station:
 			metrics.append(metric)
 			result = self.ZabbixHost.send(metrics)
 
+	def __addToDb(self,stationCode,tagName,tagValue):
+			self.sql = self.sql + "(" + "'" + stationCode + "'," + "'" + tagName + "'," + "'" + strftime("%Y-%m-%d %H:%M:%S", gmtime()) + "'," + str(tagValue) + "),"
+
+	def __sendToDb(self):
+		# self.sql = "SET TIMEZONE ='Europe/Kiev';INSERT INTO data (location,tagname,datetime,tagvalue) VALUES " + self.sql
+		self.sql = "INSERT INTO data (location,tagname,datetime,tagvalue) VALUES " + self.sql
+		self.sql = self.sql[:-1]
+		self.sql = self.sql + " ON CONFLICT DO NOTHING;"
+		# print(self.sql)
+		#print("DB connect.")
+
+		if self.conn is None or self.conn.closed:
+			try:
+				self.conn = psycopg2.connect(self.ConnectString)
+				self.cursor = self.conn.cursor()
+			except psycopg2.OperationalError:
+				self.conn = None
+				print("DB connect except.")
+
+		if self.conn is not None and not self.conn.closed:
+			try:
+				self.cursor.execute(self.sql)
+				self.conn.commit()
+			except (Exception, psycopg2.Error) as error:
+				print(error.pgerror)
+
+		self.sql = ""
+
 	def runCycleInstance(self):
 		#self.modbusClient = ModbusTcpClient(self.ipAddress,self.ipPort)
 		if self.modbusClient.connect():
@@ -48,6 +86,7 @@ class Station:
 			self.modbusClient.close() 
 
 	def __processVariable(self,device):
+		self.sql = ""
 		lastPoll = 0
 		variablesCount = device.getVariablesCount()
 		onePollPart = 100/variablesCount
@@ -56,11 +95,18 @@ class Station:
 				varibaleValue = self.__readVariableFromModbus(device.getModbusAddress(),device.getVariableModbusAddress(i),device.getVariableType(i),device.getByteIndian(i),device.getWordIndian(i),device.getCommand(i))
 				device.setVariableValue(i,varibaleValue)
 				lastPoll = lastPoll + onePollPart
-				self.__sendToZabbix(device.getZabbixName(),device.getVariableName(i),device.getVariableValue(i))
+				self.__addToDb(device.getZabbixName(),device.getVariableName(i),device.getVariableValue(i))
+				if self.ZabbixHost != None:
+					self.__sendToZabbix(device.getZabbixName(),device.getVariableName(i),device.getVariableValue(i))
 				#print(device.getVariableValue(i))
 			except:
 				print ('Error reading register:',device.getModbusAddress(),device.getVariableName(i))
-		self.__sendToZabbix(device.getZabbixName(),'LASTPOLL', lastPoll)	
+
+		self.__addToDb(device.getZabbixName(),'LASTPOLL', lastPoll)
+		if self.ZabbixHost != None:
+			self.__sendToZabbix(device.getZabbixName(),'LASTPOLL', lastPoll)
+		self.__sendToDb()
+
 
 	def __readVariableFromModbus(self,modbusAddress,modbusVariableAddress,type,byteIndian,wordIndian,useCommand):
 		if(byteIndian=='Big'):
