@@ -27,3 +27,11 @@
 Generated xml template `DEVICENAME.xml` save into folder zabbix_templates.
 
 Example: `#python zabbixtemplategenerator.py TEST`
+
+
+Python Libraries:
+Package                Version
+---------------------- -------------
+psycopg2               2.9.6
+py-zabbix              1.1.7
+pymodbus               2.5.3
