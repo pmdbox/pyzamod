@@ -30,8 +30,7 @@ Example: `#python zabbixtemplategenerator.py TEST`
 
 
 Python Libraries:
-Package                Version
----------------------- -------------
-psycopg2               2.9.6
-py-zabbix              1.1.7
-pymodbus               2.5.3
+Package Version
+psycopg2  2.9.6
+py-zabbix 1.1.7
+pymodbus  2.5.3
